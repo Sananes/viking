@@ -781,6 +781,8 @@ HEADER STYLES
     text-align: center;
     float: none !important;
     margin: 0 auto; }
+  .header #site-title {
+    display: inline-block; }
   .header .menu-toggle {
     height: 200px;
     float: left; }
