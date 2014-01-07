@@ -816,6 +816,31 @@ HEADER STYLES
 NAVIGATION STYLES
 *********************/
 /* The {{nav}} helper outputs a site-navigation div */
+.nav {
+  position: relative;
+  background: #3f484b;
+  line-height: 50px; }
+  .nav #inner-nav {
+    margin: 0 auto;
+    float: none; }
+  .nav ul {
+    margin: 0; }
+    .nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+      line-height: 50px;
+      height: 50px; }
+      .nav ul li a {
+        color: #b3b3b3;
+        text-decoration: none;
+        line-height: 50px;
+        height: 50px;
+        display: inline-block; }
+        .nav ul li a:hover, .nav ul li a.active {
+          color: white; }
+        .nav ul li a.active {
+          border-bottom: 2px solid white; }
+
 #site-navigation {
   border: 1px solid #ccc;
   border-bottom: 0;
