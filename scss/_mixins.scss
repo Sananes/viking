@@ -56,6 +56,7 @@ $primary: 					#509cff;
 
 $black:             #212121;
 $white:             #fff;
+$lightgrey:         #ddd;
 
 $link-color:        $primary;
 $link-hover:        #474747;
@@ -151,32 +152,26 @@ BUTTONS
 
 .button, .button:visited {
 	font-family: $sans-serif;
-	border: 1px solid darken($link-color, 13%);
-	border-top-color: darken($link-color, 7%);
-	border-left-color: darken($link-color, 7%);
 	padding: 4px 12px;
 	color: $white;
 	display: inline-block;
 	font-size: 11px;
-	font-weight: bold;
+	font-weight: 500;
 	text-decoration: none;
-	text-shadow: 0 1px rgba(0,0,0, .75);
+	letter-spacing:1px;
 	cursor: pointer;
 	margin-bottom: 20px;
 	line-height: 21px;
 	border-radius: 4px;
-	@include css-gradient($link-color, darken($link-color, 5%));
-
+	background: $lightgrey;
+  @include transition(background .2s linear, color 2s ease);
 
 	&:hover, &:focus {
 		color: $white;
-	  	border: 1px solid darken($link-color, 13%);
-	  	border-top-color: darken($link-color, 20%);
-	 	border-left-color: darken($link-color, 20%);
-		@include css-gradient(darken($link-color, 5%), darken($link-color, 10%));
+		background: darken($link-color, 5%);
 	}
 
 	&:active {
-		@include css-gradient(darken($link-color, 5%), $link-color);
+		background: darken($link-color, 5%);
 	}
 }

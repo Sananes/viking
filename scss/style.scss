@@ -97,7 +97,7 @@ query for retina AND a certain size if you want. Go Nuts.
        only screen and (min--moz-device-pixel-ratio: 1.5),
        only screen and (min-device-pixel-ratio: 1.5) {
 
-	// styles in 2x.scss
+	// styles in 2x.scsslorem
 	@import "2x";
 
 } // end of media query

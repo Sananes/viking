@@ -597,44 +597,28 @@ BUTTONS
 *********************/
 .button, .button:visited {
   font-family: "futura-pt", Helvetica, Arial, sans-serif;
-  border: 1px solid #0e76ff;
-  border-top-color: #2c88ff;
-  border-left-color: #2c88ff;
   padding: 4px 12px;
   color: white;
   display: inline-block;
   font-size: 11px;
-  font-weight: bold;
+  font-weight: 500;
   text-decoration: none;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.75);
+  letter-spacing: 1px;
   cursor: pointer;
   margin-bottom: 20px;
   line-height: 21px;
   border-radius: 4px;
-  background-color: #378eff;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#509cff), to(#378eff));
-  background-image: -webkit-linear-gradient(top, #509cff, #378eff);
-  background-image: -moz-linear-gradient(top, #509cff, #378eff);
-  background-image: -o-linear-gradient(top, #509cff, #378eff);
-  background-image: linear-gradient(to bottom, #509cff, #378eff); }
+  background: #dddddd;
+  -webkit-transition: background 0.2s linear, color 2s ease;
+  -ms-transition: background 0.2s linear, color 2s ease;
+  -o-transition: background 0.2s linear, color 2s ease;
+  -transition: background 0.2s linear, color 2s ease;
+  transition: background 0.2s linear, color 2s ease; }
   .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
     color: white;
-    border: 1px solid #0e76ff;
-    border-top-color: #0065e9;
-    border-left-color: #0065e9;
-    background-color: #1d7fff;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#378eff), to(#1d7fff));
-    background-image: -webkit-linear-gradient(top, #378eff, #1d7fff);
-    background-image: -moz-linear-gradient(top, #378eff, #1d7fff);
-    background-image: -o-linear-gradient(top, #378eff, #1d7fff);
-    background-image: linear-gradient(to bottom, #378eff, #1d7fff); }
+    background: #378eff; }
   .button:active, .button:visited:active {
-    background-color: #509cff;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#378eff), to(#509cff));
-    background-image: -webkit-linear-gradient(top, #378eff, #509cff);
-    background-image: -moz-linear-gradient(top, #378eff, #509cff);
-    background-image: -o-linear-gradient(top, #378eff, #509cff);
-    background-image: linear-gradient(to bottom, #378eff, #509cff); }
+    background: #378eff; }
 
 /*
 BASE (MOBILE) SIZE
@@ -673,6 +657,11 @@ LINK STYLES
 *********************/
 a, a:visited {
   color: #474747;
+  -webkit-transition: color 0.2s ease-out, background 2s ease-in;
+  -ms-transition: color 0.2s ease-out, background 2s ease-in;
+  -o-transition: color 0.2s ease-out, background 2s ease-in;
+  -transition: color 0.2s ease-out, background 2s ease-in;
+  transition: color 0.2s ease-out, background 2s ease-in;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
@@ -718,13 +707,22 @@ a, a:visited {
         background-image: url("../images/arrow-top@2x.png");
         background-size: 100% 100%; } }
 
+.button {
+  background: #dddddd;
+  border-radius: 35px;
+  font-size: 14px;
+  margin: 0; }
+
+.read-more {
+  padding-top: 20px; }
+
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "futura-pt", Helvetica, Arial, sans-serif;
   text-rendering: optimizelegibility;
-  font-weight: 500;
+  font-weight: 800;
   text-transform: uppercase;
   /*
   if you're going to use webfonts, be sure to check your weights

@@ -35,7 +35,7 @@ LINK STYLES
 
 a, a:visited {
 	color: $link-hover;
-
+    @include transition(color .2s ease-out, background 2s ease-in);
 	/* on hover */
 	&:hover, &:focus {
 		color: $link-color;
@@ -85,6 +85,17 @@ a, a:visited {
     }
     
 }
+
+.button {
+    background: $lightgrey;
+    border-radius: 35px;
+    font-size: 14px;
+    margin:0;
+
+}
+.read-more {
+    padding-top:20px;
+}
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
@@ -92,7 +103,7 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	font-family: $sans-serif;
 	text-rendering: optimizelegibility;
-	font-weight: 500;
+	font-weight: 800;
     text-transform:uppercase;
 	/*
 	if you're going to use webfonts, be sure to check your weights
