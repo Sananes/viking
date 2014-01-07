@@ -873,11 +873,11 @@ hr {
   text-align: center; }
 
 #inner-content {
-  text-align: center; }
+  text-align: center;
+  float: none !important;
+  margin: 0 auto !important; }
 
 #main {
-  float: none;
-  margin: 0 auto;
   padding-bottom: 40px; }
 
 .post {
