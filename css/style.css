@@ -709,7 +709,7 @@ a, a:visited {
 
 .button {
   background: #dddddd;
-  border-radius: 35px;
+  border-radius: 3px;
   font-size: 14px;
   margin: 0; }
 
@@ -775,6 +775,24 @@ HEADER STYLES
     left: 0;
     right: 0;
     bottom: 0; }
+  .header #inner-header {
+    position: relative;
+    z-index: 100; }
+  .header .menu-toggle {
+    height: 200px;
+    float: left; }
+  .header .menu-icon {
+    text-indent: -999em;
+    background-image: url("../images/menu-icon.png");
+    width: 32px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 200px; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
+      .header .menu-icon {
+        background-image: url("../images/menu-icon@2x.png");
+        background-size: 100% 100%; } }
 
 #logo img {
   max-width: 100%; }
@@ -817,7 +835,7 @@ NAVIGATION STYLES
 POSTS & CONTENT STYLES
 *********************/
 hr {
-  border: 1px dashed #ddd;
+  border: 1px dotted #cccccc;
   border-bottom: 0px; }
 
 #content {
