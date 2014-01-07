@@ -168,10 +168,13 @@ HEADER STYLES
         right:0;
         bottom:0;
     }
-#inner-header {
-    position:relative;
-    z-index:100;
-}
+    #inner-header {
+        position:relative;
+        z-index:100;
+        text-align:center;
+        float:none !important;
+        margin:0 auto;
+    }
     .menu-toggle {
         height:200px;
         float:left;

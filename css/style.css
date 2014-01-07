@@ -777,7 +777,10 @@ HEADER STYLES
     bottom: 0; }
   .header #inner-header {
     position: relative;
-    z-index: 100; }
+    z-index: 100;
+    text-align: center;
+    float: none !important;
+    margin: 0 auto; }
   .header .menu-toggle {
     height: 200px;
     float: left; }
