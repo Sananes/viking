@@ -372,6 +372,12 @@ AUTHOR BIO
         margin-top:0px;
         margin-bottom:0px;
     }
+    p {
+        margin-top:0px;
+    }
+    small {
+        font-size: 14px;
+    }
 }
 
 /*********************
@@ -421,6 +427,12 @@ hr {
 }
 .post {
     margin-bottom: 40px;
+
+    &:last-child, &.last, &:last {
+        hr {
+            display:none;
+        }
+    }
 }
 .hentry {
 

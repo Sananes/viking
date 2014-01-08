@@ -944,6 +944,10 @@ AUTHOR BIO
     text-align: left !important;
     margin-top: 0px;
     margin-bottom: 0px; }
+  .author-bio p {
+    margin-top: 0px; }
+  .author-bio small {
+    font-size: 14px; }
 
 /*********************
 POSTS & CONTENT STYLES
@@ -979,6 +983,8 @@ hr {
 
 .post {
   margin-bottom: 40px; }
+  .post:last-child hr, .post.last hr, .post:last hr {
+    display: none; }
 
 /* end .hentry */
 /* style by tag (i.e. tag-news) */
