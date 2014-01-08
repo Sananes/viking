@@ -21,7 +21,6 @@ body {
 }
 
 img {
-    max-width:100% !important;
     height:auto;
     display:block;
     width:100%;
@@ -81,6 +80,11 @@ a, a:visited {
 }
 .read-more {
     padding-top:20px;
+    
+    a {
+        font-family: $sans-serif !important;
+        text-transform: normal;
+    }
 }
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
@@ -91,7 +95,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	text-rendering: optimizelegibility;
 	font-weight: 800;
     letter-spacing:-1px;
-    text-transform:uppercase;
+    text-transform:normal;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -149,7 +153,21 @@ HEADER STYLES
     height: $header-height;
     z-index:100;
     background: $primary url(../images/header-image.jpg) no-repeat top center;
+    #logo {
+        line-height:normal !important;
+        min-height:30px;
+        max-height:40px;
+        margin: 0 auto;
+        display:inline-block;
+        line-height: $header-height;
+        vertical-align:middle;
 
+        img {
+            width:auto !important;
+            height: auto !important;
+            max-width: auto !important;
+        }
+    }
     #inner-header {
         position:relative;
         z-index:100;
@@ -182,7 +200,7 @@ HEADER STYLES
 
 #logo {
     img {
-        max-width: 100%;
+        //max-width: 100%;
     }
 }
 

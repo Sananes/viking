@@ -14,24 +14,24 @@
         <a href="#" class="close">Close</a>
     </div>
 </nav>
-<header class="header" role="banner">
-
+<header class="header" role="banner"  {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
     <div id="inner-header" class="sevencol wrap clearfix">
-
-        {{#if @blog.logo}}
-            <!-- Logo -->
-            <div id="logo" class="h1">
-                <a id="logo" href="/"><img src="{{@blog.logo}}" alt="Logo"></a>
-            </div>
-        {{/if}}
 
         <!-- Title -->
         <div class="menu-toggle">
             <a href="#toggle" class="menu-icon">Menu</a>
         </div>
-        <div id="site-title" class="h1">
-            <a href="/" rel="nofollow">{{@blog.title}}</a>
-        </div>
+        {{#if @blog.logo}}
+            <!-- Logo -->
+            <div id="logo">
+                <a id="logo" href="/"><img src="{{@blog.logo}}" alt="Logo"></a>
+            </div>
+        {{else}}
+            <div id="site-title" class="h1">
+                <a href="/" rel="nofollow">{{@blog.title}}</a>
+            </div>        
+        {{/if}}
+
 
         <!-- Static Menu (Dynamic menu not yet available in Ghost 0.3) -->
         <!-- {{> navigation}} -->

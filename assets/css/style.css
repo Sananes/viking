@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Exo+2:400,100,200,300,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic);
 /******************************************************************
 Site Name:
 Author:
@@ -597,7 +597,7 @@ probably best not to use it. I mean, were you going to anyway? */
 BUTTONS
 *********************/
 .button, .button:visited {
-  font-family: "Merriweather", Cambria, Times New Roman, Times, serif;
+  font-family: Cambria, Times New Roman, Times, serif;
   padding: 4px 12px;
   color: white;
   display: inline-block;
@@ -641,13 +641,12 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 body {
-  font-family: "Merriweather", Cambria, Times New Roman, Times, serif;
+  font-family: Cambria, Times New Roman, Times, serif;
   font-size: 100%;
   line-height: 2;
   color: #565656; }
 
 img {
-  max-width: 100% !important;
   height: auto;
   display: block;
   width: 100%;
@@ -699,16 +698,19 @@ a, a:visited {
 
 .read-more {
   padding-top: 20px; }
+  .read-more a {
+    font-family: "Exo 2", Helvetica, Arial, sans-serif !important;
+    text-transform: normal; }
 
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  font-family: "futura-pt", Helvetica, Arial, sans-serif;
+  font-family: "Exo 2", Helvetica, Arial, sans-serif;
   text-rendering: optimizelegibility;
   font-weight: 800;
   letter-spacing: -1px;
-  text-transform: uppercase;
+  text-transform: normal;
   /*
   if you're going to use webfonts, be sure to check your weights
   http://css-tricks.com/watch-your-font-weight/
@@ -755,6 +757,18 @@ HEADER STYLES
   height: 200px;
   z-index: 100;
   background: #509cff url(../images/header-image.jpg) no-repeat top center; }
+  .header #logo {
+    line-height: normal !important;
+    min-height: 30px;
+    max-height: 40px;
+    margin: 0 auto;
+    display: inline-block;
+    line-height: 200px;
+    vertical-align: middle; }
+    .header #logo img {
+      width: auto !important;
+      height: auto !important;
+      max-width: auto !important; }
   .header #inner-header {
     position: relative;
     z-index: 100;
@@ -781,9 +795,6 @@ HEADER STYLES
       .header .menu-icon {
         background-image: url("../images/menu-icon@2x.png");
         background-size: 100% 100%; } }
-
-#logo img {
-  max-width: 100%; }
 
 #site-title {
   font-size: 1.8em;
