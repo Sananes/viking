@@ -770,6 +770,7 @@ HEADER STYLES
   line-height: 200px;
   height: 200px;
   z-index: 100;
+  background: #509cff url(../images/header-image.jpg) no-repeat top center;
   background-size: cover; }
   .header #logo {
     line-height: normal !important;

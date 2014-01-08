@@ -156,7 +156,7 @@ HEADER STYLES
     line-height: $header-height;
     height: $header-height;
     z-index:100;
-    //background: $primary url(../images/header-image.jpg) no-repeat top center;
+    background: $primary url(../images/header-image.jpg) no-repeat top center;
     background-size:cover;
     #logo {
         line-height:normal !important;
