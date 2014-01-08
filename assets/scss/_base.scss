@@ -153,21 +153,12 @@ HEADER STYLES
 }
 .header {
     position:relative;
-    background: $primary;
+    clear:both;
     line-height: $header-height;
     height: $header-height;
     z-index:100;
+    background: $primary url(../images/header-image.jpg) no-repeat top center;
 
-    &:before {
-        content: "";
-        background: url(../images/header-image.jpg) no-repeat top center;
-        position:absolute;
-        top:0;
-        z-index:99;
-        left:0;
-        right:0;
-        bottom:0;
-    }
     #inner-header {
         position:relative;
         z-index:100;
@@ -181,6 +172,11 @@ HEADER STYLES
     .menu-toggle {
         height:200px;
         float:left;
+        opacity:0.8;
+
+        &:hover {
+            opacity:1;
+        }
     }
     .menu-icon {
         text-indent:-999em;
@@ -220,27 +216,71 @@ NAVIGATION STYLES
 .nav {
     position:relative;
     background: #3f484b;
-    line-height:50px;
+    line-height:$menu-height;
+    height:$menu-height;
+    display:none;
+    min-height:0;
+    overflow:hidden;
+    @include transition(all .2s ease-in);
+
+    &.show {
+        display:block;
+
+        max-height:$menu-height;
+    }
 
     #inner-nav {
         margin:0 auto;
         float:none;
+        line-height:$menu-height;
+        height:$menu-height;
     }
+    .menu {
+        float:left;
+    }
+    .social-icons {
+        float:right;
+        margin-right:40px;
+        li {
+            margin-right:5px;
+        }
+        a {
+            color:#7d8f95;
+        }
+        .symbol {
+            font-size:24px;
+        }
+    }
+    .close {
+        @include retina-image('../images/close', 'png', 100%, 100%);
+        @include size (16px, 16px);
+        text-indent:-999em;
+        display:inline-block;
+        vertical-align:middle;
+        position:absolute;
+        right:0;
+        top:17px;
+        opacity:0.7;
 
+        &:hover {
+            opacity:1;
+        }
+    }
     ul {
         margin:0;
-
+        line-height:$menu-height;
+        height:$menu-height;
         li {
             display:inline-block;
             margin-right:10px;
-            line-height:50px;
-            height:50px;
+            line-height:$menu-height;
+            height:$menu-height;
 
             a {
                 color: darken($white, 30%);
                 text-decoration:none;
-                line-height:50px;
-                height:50px;
+                line-height:$menu-height;
+                height:$menu-height;
                 display:inline-block;
 
                 &:hover, &.active {

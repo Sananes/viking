@@ -762,19 +762,11 @@ HEADER STYLES
 
 .header {
   position: relative;
-  background: #509cff;
+  clear: both;
   line-height: 200px;
   height: 200px;
-  z-index: 100; }
-  .header:before {
-    content: "";
-    background: url(../images/header-image.jpg) no-repeat top center;
-    position: absolute;
-    top: 0;
-    z-index: 99;
-    left: 0;
-    right: 0;
-    bottom: 0; }
+  z-index: 100;
+  background: #509cff url(../images/header-image.jpg) no-repeat top center; }
   .header #inner-header {
     position: relative;
     z-index: 100;
@@ -785,7 +777,10 @@ HEADER STYLES
     display: inline-block; }
   .header .menu-toggle {
     height: 200px;
-    float: left; }
+    float: left;
+    opacity: 0.8; }
+    .header .menu-toggle:hover {
+      opacity: 1; }
   .header .menu-icon {
     text-indent: -999em;
     background-image: url("../images/menu-icon.png");
@@ -819,12 +814,56 @@ NAVIGATION STYLES
 .nav {
   position: relative;
   background: #3f484b;
-  line-height: 50px; }
+  line-height: 50px;
+  height: 50px;
+  display: none;
+  min-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+  .nav.show {
+    display: block;
+    max-height: 50px; }
   .nav #inner-nav {
     margin: 0 auto;
-    float: none; }
+    float: none;
+    line-height: 50px;
+    height: 50px; }
+  .nav .menu {
+    float: left; }
+  .nav .social-icons {
+    float: right;
+    margin-right: 40px; }
+    .nav .social-icons li {
+      margin-right: 5px; }
+    .nav .social-icons a {
+      color: #7d8f95; }
+    .nav .social-icons .symbol {
+      font-size: 24px; }
+  .nav .close {
+    background-image: url("../images/close.png");
+    width: 16px;
+    height: 16px;
+    text-indent: -999em;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    top: 17px;
+    opacity: 0.7; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
+      .nav .close {
+        background-image: url("../images/close@2x.png");
+        background-size: 100% 100%; } }
+    .nav .close:hover {
+      opacity: 1; }
   .nav ul {
-    margin: 0; }
+    margin: 0;
+    line-height: 50px;
+    height: 50px; }
     .nav ul li {
       display: inline-block;
       margin-right: 10px;

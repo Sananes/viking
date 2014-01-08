@@ -2,8 +2,8 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         paths: {
-            scss: './scss',
-            css: './css'
+            scss: './assets/scss',
+            css: './assets/css'
         },
         buildType: 'Build',
         pkg: grunt.file.readJSON('package.json'),
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
                 livereload: true
             },
             sass: {
-                files: './scss/**/*.scss',
+                files: './assets/scss/**/*.scss',
                 tasks: ['sass:admin'],
             }
         }
