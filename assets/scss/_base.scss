@@ -217,16 +217,15 @@ NAVIGATION STYLES
     position:relative;
     background: #3f484b;
     line-height:$menu-height;
-    height:$menu-height;
-    min-height:0;
-    max-height:0;
+    height:0;
     overflow:hidden;
-    @include transition(all .3s ease-in-out);
+    @include transition(all .2s ease-in-out);
 
 
     &.show {
-        display:block;
-        max-height:$menu-height;
+    display:block;
+    height:$menu-height;
+    @include transform(translateY(0px));
     }
 
     #inner-nav {
