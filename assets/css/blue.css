@@ -1,0 +1,19 @@
+/*************************
+  Red Color Scheme
+**************************/
+
+a:hover, .entry-content a {
+  color: #cd3434 !important;
+}
+.entry-content a:hover {
+  color: #ae2323 !important;
+}
+.button:hover {
+  background: #cd3434 !important;
+}
+.menu li a:hover, .social-icons li a:hover {
+  color: #fff !important;
+}
+blockquote {
+  border-color: #cd3434 !important;
+}

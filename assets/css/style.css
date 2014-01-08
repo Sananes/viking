@@ -756,7 +756,7 @@ HEADER STYLES
   line-height: 200px;
   height: 200px;
   z-index: 100;
-  background: #509cff url(../images/header-image.jpg) no-repeat top center; }
+  background-size: cover; }
   .header #logo {
     line-height: normal !important;
     min-height: 30px;
@@ -933,14 +933,15 @@ POSTS & CONTENT STYLES
 *********************/
 .post-template .entry-content {
   text-align: left; }
-.post-template h1, .post-template h2, .post-template h3, .post-template h4, .post-template h5 {
+
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5 {
   text-align: center; }
-.post-template h2 {
+.entry-content h2 {
   font-weight: 700 !important; }
-.post-template a {
+.entry-content a {
   color: #509cff;
   text-decoration: none; }
-  .post-template a:hover {
+  .entry-content a:hover {
     color: #0065e9; }
 
 hr {
@@ -1073,8 +1074,7 @@ FOOTER STYLES
 
 .copyright {
   display: inline-block;
-  float: left;
-  font-size: 80%; }
+  float: left; }
 
 .back-to-top {
   display: inline-block;

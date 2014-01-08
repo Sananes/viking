@@ -1,0 +1,24 @@
+/*************************
+  Green Color Scheme
+**************************/
+.header {
+  background-color: #8aba56 !important;
+}
+a:hover, .entry-content a {
+  color: #8aba56 !important;
+}
+.entry-content a:hover {
+  color: #729e42 !important;
+}
+.button, .home-template .button, .home-template .button:hover {
+  color: #fff !important;
+}
+.button:hover {
+  background: #8aba56 !important;
+}
+.menu li a:hover, .social-icons li a:hover {
+  color: #fff !important;
+}
+blockquote {
+  border-color: #8aba56 !important;
+}

@@ -152,7 +152,8 @@ HEADER STYLES
     line-height: $header-height;
     height: $header-height;
     z-index:100;
-    background: $primary url(../images/header-image.jpg) no-repeat top center;
+    //background: $primary url(../images/header-image.jpg) no-repeat top center;
+    background-size:cover;
     #logo {
         line-height:normal !important;
         min-height:30px;
@@ -370,10 +371,10 @@ POSTS & CONTENT STYLES
 *********************/
 
 
-.post-template {
-    .entry-content {
-        text-align: left;
-    }
+.post-template .entry-content {
+    text-align:left;
+}
+.entry-content {
 
     h1, h2, h3, h4, h5 {
         text-align:center;
@@ -388,8 +389,11 @@ POSTS & CONTENT STYLES
         &:hover {
             color: darken($primary, 20%);
         }
-    }
+    }    
 }
+
+
+
 hr {
     border:1px dotted lighten(#000, 80%);
     border-bottom:0px;
@@ -600,7 +604,6 @@ FOOTER STYLES
 .copyright {
     display:inline-block;
     float:left;
-    font-size:80%;
 }
 .back-to-top {
     display:inline-block;
