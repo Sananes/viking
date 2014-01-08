@@ -75,20 +75,34 @@ jQuery(document).ready(function($) {
     // add all your scripts here
 
     function navToggle() {
-        var menuIcon = $('.menu-toggle a'),
+        var menuIcon = $('.menu-toggle a'), bodyClick = false
             navHeader = $('.nav'),
-            close = navHeader.find('.close');
+            close = navHeader.find('.close'),
+            overlay = $('.overlay').hide();
 
         // Menu icon toggle
         menuIcon.on('click', function(e) {
             e.preventDefault();
             navHeader.toggleClass('show');
+            if(bodyClick == true) {
+                overlay.show();
+            }
         });
 
+        // Close icon toggle
         close.on('click', function(e) {
             e.preventDefault();
             navHeader.removeClass('show');
         });
+
+        // Body click hide menu
+        if(bodyClick == true) {
+            overlay.on('click', function(e) {
+                e.preventDefault();
+                navHeader.removeClass('show');
+                overlay.hide();
+            })
+        }
 
 
     };
