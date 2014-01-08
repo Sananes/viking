@@ -80,11 +80,13 @@ jQuery(document).ready(function($) {
             close = navHeader.find('.close');
 
         // Menu icon toggle
-        menuIcon.on('click', function() {
+        menuIcon.on('click', function(e) {
+            e.preventDefault();
             navHeader.toggleClass('show');
         });
 
-        close.on('click', function() {
+        close.on('click', function(e) {
+            e.preventDefault();
             navHeader.removeClass('show');
         });
 
