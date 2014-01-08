@@ -1,7 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Exo+2:400,100,200,300,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic);
 /******************************************************************
-Site Name: 
-Author: 
+Site Name:  Heimdallr
+Author:     Aaron Sananes & Daniel Sandvik
+Website:    http://www.northernfolks.com
 
 Stylesheet: IE Stylesheet
 
@@ -18,6 +19,11 @@ understand (what's inside the media queries). We also need to
 import the mixins file so SASS can understand the variables.
 */
 /*********************
+Site Name:  Heimdallr
+Author:     Aaron Sananes & Daniel Sandvik
+Website:    http://www.northernfolks.com
+
+
 TYPOGRAPHY
 *********************/
 /*
@@ -52,8 +58,9 @@ a.symbol:before {
 
 /* import mixins */
 /******************************************************************
-Site Name:
-Author:
+Site Name:  Heimdallr
+Author:     Aaron Sananes & Daniel Sandvik
+Website:    http://www.northernfolks.com
 
 Stylesheet: Mixins & Constants Stylesheet
 
@@ -165,8 +172,9 @@ BUTTONS
     background: #378eff; }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name:  Heimdallr
+Author:     Aaron Sananes & Daniel Sandvik
+Website:    http://www.northernfolks.com
 
 Stylesheet: Grid Stylesheet
 
@@ -246,8 +254,9 @@ values are commented out on each line.
   float: right; }
 
 /******************************************************************
-Site Name: 
-Author: 
+Site Name:  Heimdallr
+Author:     Aaron Sananes & Daniel Sandvik
+Website:    http://www.northernfolks.com
 
 Stylesheet: 481px and Up Stylesheet
 
@@ -300,8 +309,9 @@ FOOTER STYLES
 *********************/
 /* end .footer */
 /******************************************************************
-Site Name:
-Author:
+Site Name:  Heimdallr
+Author:     Aaron Sananes & Daniel Sandvik
+Website:    http://www.northernfolks.com
 
 Stylesheet: Tablet & Small Desktop Stylesheet
 
@@ -373,8 +383,9 @@ FOOTER STYLES
 *********************/
 /* end .footer */
 /******************************************************************
-Site Name: 
-Author: 
+Site Name:  Heimdallr
+Author:     Aaron Sananes & Daniel Sandvik
+Website:    http://www.northernfolks.com
 
 Stylesheet: Desktop Stylsheet
 

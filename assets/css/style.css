@@ -476,6 +476,11 @@ dd {
   list-style: none; }
 
 /*********************
+Site Name:  Heimdallr
+Author:     Aaron Sananes & Daniel Sandvik
+Website:    http://www.northernfolks.com
+
+
 TYPOGRAPHY
 *********************/
 /*
@@ -509,8 +514,9 @@ a.symbol:before {
   font-size: 130%; }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name:  Heimdallr
+Author:     Aaron Sananes & Daniel Sandvik
+Website:    http://www.northernfolks.com
 
 Stylesheet: Mixins & Constants Stylesheet
 
@@ -628,6 +634,9 @@ you set a great foundation, you won't need to add too many styles in
 the other stylesheets. Remember, keep it light: Speed is Important.
 */
 /******************************************************************
+Site Name:  Heimdallr
+Author:     Aaron Sananes & Daniel Sandvik
+Website:    http://www.northernfolks.com
 
 Stylesheet: Base Mobile Stylesheet
 
@@ -1106,8 +1115,9 @@ tweeners.
 */
 @media only screen and (min-width: 481px) {
   /******************************************************************
-  Site Name: 
-  Author: 
+  Site Name:  Heimdallr
+  Author:     Aaron Sananes & Daniel Sandvik
+  Website:    http://www.northernfolks.com
   
   Stylesheet: 481px and Up Stylesheet
   
@@ -1176,8 +1186,9 @@ you can add resource intensive styles.
     right: 0 !important; }
 
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name:  Heimdallr
+  Author:     Aaron Sananes & Daniel Sandvik
+  Website:    http://www.northernfolks.com
   
   Stylesheet: Grid Stylesheet
   
@@ -1257,8 +1268,9 @@ you can add resource intensive styles.
     float: right; }
 
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name:  Heimdallr
+  Author:     Aaron Sananes & Daniel Sandvik
+  Website:    http://www.northernfolks.com
   
   Stylesheet: Tablet & Small Desktop Stylesheet
   
@@ -1337,8 +1349,9 @@ you can add resource intensive styles.
 */
 @media only screen and (min-width: 1030px) {
   /******************************************************************
-  Site Name: 
-  Author: 
+  Site Name:  Heimdallr
+  Author:     Aaron Sananes & Daniel Sandvik
+  Website:    http://www.northernfolks.com
   
   Stylesheet: Desktop Stylsheet
   
@@ -1352,8 +1365,9 @@ This is for the larger monitors and possibly full screen viewers.
 */
 @media only screen and (min-width: 1240px) {
   /******************************************************************
-  Site Name: 
-  Author: 
+  Site Name:  Heimdallr
+  Author:     Aaron Sananes & Daniel Sandvik
+  Website:    http://www.northernfolks.com
   
   Stylesheet: Super Large Monitor Stylesheet
   
@@ -1369,6 +1383,9 @@ query for retina AND a certain size if you want. Go Nuts.
 */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /******************************************************************
+  Site Name:  Heimdallr
+  Author:     Aaron Sananes & Daniel Sandvik
+  Website:    http://www.northernfolks.com
   
   Stylesheet: Retina Screens & Devices Stylesheet
   
@@ -1418,8 +1435,9 @@ be set to display none.
 */
 @media print {
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name:  Heimdallr
+  Author:     Aaron Sananes & Daniel Sandvik
+  Website:    http://www.northernfolks.com
   
   Stylesheet: Print Stylesheet
   
