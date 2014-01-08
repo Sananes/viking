@@ -178,6 +178,10 @@ HEADER STYLES
     }
     #site-title {
         display:inline-block;
+
+        a:hover {
+            color: rgba(255,255,255,0.8) !important;
+        }
     }
     .menu-toggle {
         height:200px;
