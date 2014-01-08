@@ -53,8 +53,12 @@
     <section class="entry-content clearfix">
         {{content}}
     </section> <!-- end article section -->
+    <hr>
 
     <footer class="article-footer">
+
+  
+
         {{#if tags}}
             <p class="tags">
                 <span class="tags-title">
@@ -72,6 +76,18 @@
                 </span>
             </p>
         {{/if}}
-    </footer> <!-- end article footer -->
+        <hr>
+        <section  class="author clearfix">
+            <div class="twocol first avatar">
+                <img src="{{author.image}}" class="author-img" title="author pic"/>
+            </div>
+            <div class="tencol author-bio">
+                <h4>{{author.name}}</h2>
+                <small>{{author.location}}</small>
+                <p>{{author.bio}}</p>
+            </div>
+        </section>  
 
+    </footer> <!-- end article footer -->
+    <hr>
 </article>
