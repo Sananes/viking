@@ -4,12 +4,7 @@
 
     <header class="article-header">
 
-        <h1 class="h2">
-            <!-- <a href="/{{slug}}" rel="bookmark" title="{{title}}">{{title}}</a> -->
-            {{title}}
-        </h1>
-
-        <p class="byline vcard">
+<p class="byline vcard">
             Posted
             <time class="updated"
                   datetime="{{date published_at format='YYYY-MM-DD'}}"
@@ -38,6 +33,13 @@
 
             {{/if}}
         </p>
+
+        <h1 class="h2">
+            <!-- <a href="/{{slug}}" rel="bookmark" title="{{title}}">{{title}}</a> -->
+            {{title}}
+        </h1>
+
+        
 
         {{! Featured images are not yet implemented in Ghost.
             But when they are, this will be awesome. }}

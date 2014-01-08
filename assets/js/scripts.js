@@ -80,10 +80,29 @@ jQuery(document).ready(function($) {
 
         close.on('click', function() {
             navHeader.removeClass('show');
-        })
+        });
+
+
     };
 
     navToggle();
+
+    // Scroll to Top
+
+    // $(window).scroll(function () {
+    //   if ($(this).scrollTop() > 100) {
+    //       $('.scrollup').fadeIn();
+    //   } else {
+    //       $('.scrollup').fadeOut();
+    //   }
+    // });
+
+    $('.back-to-top').click(function () {
+      $("html, body").animate({
+          scrollTop: 0
+      }, 600);
+      return false;
+    });
 
 }); /* end of as page load scripts */
 

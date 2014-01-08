@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic);
 /******************************************************************
 Site Name: 
 Author: 
@@ -139,7 +140,7 @@ probably best not to use it. I mean, were you going to anyway? */
 BUTTONS
 *********************/
 .button, .button:visited {
-  font-family: "Georgia", Cambria, Times New Roman, Times, serif;
+  font-family: "Merriweather", Cambria, Times New Roman, Times, serif;
   padding: 4px 12px;
   color: white;
   display: inline-block;
