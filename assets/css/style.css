@@ -733,9 +733,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
     text-decoration: none; }
 
-h3, .h3, h4, .h4, h5, .h5 {
-  font-weight: 700 !important; }
-
 h1, .h1 {
   font-size: 3.5em;
   line-height: 1.333em; }
@@ -957,8 +954,6 @@ POSTS & CONTENT STYLES
 
 .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5 {
   text-align: center; }
-.entry-content h2 {
-  font-weight: 700 !important; }
 .entry-content a {
   color: #509cff;
   text-decoration: none; }
