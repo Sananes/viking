@@ -73,16 +73,12 @@ jQuery(document).ready(function($) {
             navHeader = $('.nav'),
             close = navHeader.find('.close');
 
-        // Hide nav header
-        navHeader.hide();
-
         // Menu icon toggle
         menuIcon.on('click', function() {
-            navHeader.toggle().toggleClass('show');
+            navHeader.toggleClass('show');
         });
 
         close.on('click', function() {
-            navHeader.hide();
             navHeader.removeClass('show');
         })
     };

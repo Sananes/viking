@@ -816,14 +816,14 @@ NAVIGATION STYLES
   background: #3f484b;
   line-height: 50px;
   height: 50px;
-  display: none;
   min-height: 0;
+  max-height: 0;
   overflow: hidden;
-  -webkit-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in; }
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
   .nav.show {
     display: block;
     max-height: 50px; }
