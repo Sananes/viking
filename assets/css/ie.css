@@ -19,9 +19,10 @@ understand (what's inside the media queries). We also need to
 import the mixins file so SASS can understand the variables.
 */
 /*********************
-Site Name:  Heimdallr
-Author:     Aaron Sananes & Daniel Sandvik
-Website:    http://www.northernfolks.com
+ Site Name:  Heimdallr
+ Company:    NorthernFolks
+ Author:     Aaron Sananes & Daniel Sandvik
+ Website:    http://www.northernfolks.com
 
 
 TYPOGRAPHY
@@ -59,6 +60,7 @@ a.symbol:before {
 /* import mixins */
 /******************************************************************
 Site Name:  Heimdallr
+Company:    NorthernFolks
 Author:     Aaron Sananes & Daniel Sandvik
 Website:    http://www.northernfolks.com
 
@@ -173,6 +175,7 @@ BUTTONS
 
 /******************************************************************
 Site Name:  Heimdallr
+Company:    NorthernFolks
 Author:     Aaron Sananes & Daniel Sandvik
 Website:    http://www.northernfolks.com
 
@@ -255,6 +258,7 @@ values are commented out on each line.
 
 /******************************************************************
 Site Name:  Heimdallr
+Company:    NorthernFolks
 Author:     Aaron Sananes & Daniel Sandvik
 Website:    http://www.northernfolks.com
 
@@ -310,6 +314,7 @@ FOOTER STYLES
 /* end .footer */
 /******************************************************************
 Site Name:  Heimdallr
+Company:    NorthernFolks
 Author:     Aaron Sananes & Daniel Sandvik
 Website:    http://www.northernfolks.com
 

@@ -1,4 +1,10 @@
-/*
+/*********************
+ Site Name:  Heimdallr
+ Company:    NorthernFolks
+ Author:     Aaron Sananes & Daniel Sandvik
+ Website:    http://www.northernfolks.com
+
+
  Bones Scripts File
  Author: Eddie Machado
 
