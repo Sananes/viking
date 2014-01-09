@@ -105,7 +105,7 @@ a {
         vertical-align:middle;
         text-indent:-999em;     
         display:inline-block;
-        @include animation(0,infinite,1000ms,1000ms,spin);
+        opacity:1;
     }
 }
 /******************************************************************

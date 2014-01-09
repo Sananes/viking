@@ -150,6 +150,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .onHoverPanic,
   .onHoverExplode { opacity: 1; }
 
+  .animate.infinite,
   .trigger.infinite,
   .onHoverFlash.infinite,
   .onHoverStrobe.infinite,

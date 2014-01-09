@@ -734,34 +734,7 @@ a {
     vertical-align: middle;
     text-indent: -999em;
     display: inline-block;
-    -webkit-animation-delay: 0;
-    -webkit-animation-duration: 1000ms;
-    -webkit-animation-name: spin;
-    -webkit-animation-fill-mode: forwards;
-    /* this prevents the animation from restarting! */
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: 1000ms;
-    -moz-animation-delay: 0;
-    -moz-animation-duration: 1000ms;
-    -moz-animation-name: spin;
-    -moz-animation-fill-mode: forwards;
-    /* this prevents the animation from restarting! */
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: 1000ms;
-    -o-animation-delay: 0;
-    -o-animation-duration: 1000ms;
-    -o-animation-name: spin;
-    -o-animation-fill-mode: forwards;
-    /* this prevents the animation from restarting! */
-    -o-animation-iteration-count: infinite;
-    -o-animation-timing-function: 1000ms;
-    animation-delay: 0;
-    animation-duration: 1000ms;
-    animation-name: spin;
-    animation-fill-mode: forwards;
-    /* this prevents the animation from restarting! */
-    animation-iteration-count: infinite;
-    animation-timing-function: 1000ms; }
+    opacity: 1; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
       #loading span {
         background-image: url("../images/loading-icon@2x.png");
