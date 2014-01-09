@@ -18,10 +18,16 @@
 <header class="header" role="banner"  {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
     <div id="inner-header" class="sevencol wrap clearfix">
 
-        <!-- Title -->
+        <!-- Menu -->
         <div class="menu-toggle">
             <a href="#" class="menu-icon">Menu</a>
         </div>
+
+        <!-- Mail -->
+        <div id="mail">
+            <a href="mailto:help@northernfolks.com" class="mail-icon">Mail</a>
+        </div>
+
         {{#if @blog.logo}}
             <!-- Logo -->
             <div id="logo">
@@ -32,6 +38,8 @@
                 <a href="/" rel="nofollow">{{@blog.title}}</a>
             </div>        
         {{/if}}
+
+
 
 
         <!-- Static Menu (Dynamic menu not yet available in Ghost 0.3) -->

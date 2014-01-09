@@ -108,7 +108,8 @@ jQuery(document).ready(function($) {
     };
 
     navToggle();
-
+    // var src = document.querySelector('.post img:first-of-type').getAttribute('src');
+    // $('.post').prepend('<img src="' + src +'">');
     // Scroll to Top
 
     // $(window).scroll(function () {

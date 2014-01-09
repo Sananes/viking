@@ -192,7 +192,7 @@ HEADER STYLES
             opacity:1;
         }
     }
-    .menu-icon {
+    .menu-icon, #mail a {
         text-indent:-999em;
         @include retina-image('../images/menu-icon', 'png', 100%, 100%);
         @include size (32px, 28px);
@@ -200,6 +200,20 @@ HEADER STYLES
         vertical-align:middle;
         line-height:200px;
 
+    }
+
+    #mail {
+        display:inline-block;
+        float:right;
+        height:200px;
+        a {
+            @include retina-image('../images/mail-icon', 'png', 100%, 100%);
+            @include size (30px, 30px);
+            opacity:0.8;
+            &:hover {
+                opacity: 1;
+            }
+        }
     }
 }
 
@@ -235,7 +249,7 @@ NAVIGATION STYLES
     width:100%;
     height:100%;
 }
-.close, .menu-toggle, .back-to-top a {
+.close, .menu-toggle, .back-to-top a, .mail-icon {
     @include transition(opacity .3s ease-in-out);
 }
 /* The {{nav}} helper outputs a site-navigation div */
@@ -390,7 +404,6 @@ AUTHOR BIO
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-
 
 .post-template .entry-content {
     text-align:left;

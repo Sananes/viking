@@ -797,7 +797,7 @@ HEADER STYLES
     opacity: 0.8; }
     .header .menu-toggle:hover {
       opacity: 1; }
-  .header .menu-icon {
+  .header .menu-icon, .header #mail a {
     text-indent: -999em;
     background-image: url("../images/menu-icon.png");
     width: 32px;
@@ -806,9 +806,24 @@ HEADER STYLES
     vertical-align: middle;
     line-height: 200px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
-      .header .menu-icon {
+      .header .menu-icon, .header #mail a {
         background-image: url("../images/menu-icon@2x.png");
         background-size: 100% 100%; } }
+  .header #mail {
+    display: inline-block;
+    float: right;
+    height: 200px; }
+    .header #mail a {
+      background-image: url("../images/mail-icon.png");
+      width: 30px;
+      height: 30px;
+      opacity: 0.8; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
+        .header #mail a {
+          background-image: url("../images/mail-icon@2x.png");
+          background-size: 100% 100%; } }
+      .header #mail a:hover {
+        opacity: 1; }
 
 #site-title {
   font-size: 1.8em;
@@ -833,7 +848,7 @@ NAVIGATION STYLES
   width: 100%;
   height: 100%; }
 
-.close, .menu-toggle, .back-to-top a {
+.close, .menu-toggle, .back-to-top a, .mail-icon {
   -webkit-transition: opacity 0.3s ease-in-out;
   -ms-transition: opacity 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out;
