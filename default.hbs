@@ -10,7 +10,7 @@
 <!--[if (IE 7)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!-->
-<html lang="en-US" class="js flexbox webgl no-touch geolocation hashchange history websockets rgba hsla multiplebgs backgroundsize borderimage textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage applicationcache svg svgclippaths mediaqueries no-regions no-supports" style="">
+<html lang="en-US" class="js flexbox webgl no-touch geolocation hashchange history websockets rgba hsla multiplebgs backgroundsize borderimage textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage applicationcache svg svgclippaths mediaqueries no-regions no-supports no-js" style="">
 <!--<![endif]-->
 
 <head>
@@ -25,6 +25,24 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Social Cards -->
+    <meta property="og:site_name" content="{{meta_title}}">
+    <meta property="og:url" content="{{@blog.url}}" />
+    <meta property="og:title" content="Apollo" />
+    <meta property="og:description" content="{{@blog.description}}" />
+    {{#if @blog.logo}}
+    <meta property="og:image" content="{{@blog.logo}}" />
+    {{/if}}
+    <meta property="og:type" content="website">
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@sites_twitter_handle">
+    <meta name="twitter:creator" content="@authors_twitter_handle">
+    <meta name="twitter:title" content="{{meta_title}}">
+    <meta name="twitter:description" content="{{@blog.description}}">
+    <meta name="twitter:image:src" content="{{@blog.logo}}">
 
     <!-- Announce the rss feed -->
     <link rel="alternate" type="application/rss+xml" title="{{@blog.title}} » Feed" href="/rss">
@@ -53,7 +71,7 @@
 </head>
 
 
-<body class="{{body_class}} animated fadeIn">
+<body class="{{body_class}} animate fadeIn">
 
     <div id="container">
         
@@ -66,7 +84,7 @@
             <div id="inner-content" class="sevencol wrap clearfix">
 
                 {{! The main section uses eight columns in the grid framework }}
-        
+
                 <main id="main" class="first clearfix" role="main">
                     {{{body}}}
                 </main> <!-- end #main -->
@@ -90,6 +108,8 @@
     {{ghost_foot}}
 
     <!-- Custom Scripts -->
+    <script type="text/javascript" src="/assets/js/libs/animation.js"></script>
     <script type="text/javascript" src="/assets/js/scripts.js"></script>
+
 </body>
 </html>

@@ -44,7 +44,7 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 
-a, a:visited {
+a {
 	color: $link-hover;
     @include transition(color .2s ease-out, background 2s ease-in);
 	/* on hover */
@@ -66,6 +66,7 @@ a, a:visited {
 		*/
 		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
 	}
+
 }
 .center {
     float:none;
@@ -260,6 +261,7 @@ NAVIGATION STYLES
     position:absolute;
     top:$menu-height;
     bottom:0;
+    display:none;
     left:0;
     z-index:888;
     right:0;

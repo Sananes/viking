@@ -680,7 +680,7 @@ LAYOUT & GRID STYLES
 /*********************
 LINK STYLES
 *********************/
-a, a:visited {
+a {
   color: #474747;
   -webkit-transition: color 0.2s ease-out, background 2s ease-in;
   -ms-transition: color 0.2s ease-out, background 2s ease-in;
@@ -690,9 +690,9 @@ a, a:visited {
   /* on hover */
   /* on click */
   /* mobile tap color */ }
-  a:hover, a:focus, a:visited:hover, a:visited:focus {
+  a:hover, a:focus {
     color: #509cff; }
-  a:link, a:visited:link {
+  a:link {
     /*
     this highlights links on iPhones/iPads.
     so it basically works like the :hover selector
@@ -893,6 +893,7 @@ NAVIGATION STYLES
   position: absolute;
   top: 50px;
   bottom: 0;
+  display: none;
   left: 0;
   z-index: 888;
   right: 0;

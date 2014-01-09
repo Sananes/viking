@@ -3,7 +3,7 @@
     <div id="inner-nav" class="sevencol wrap clearfix">
         <ul class="menu">
             <li><a href="/" class="active">Index</a></li>
-            <li><a href="#">Rss</a></li>
+            <li><a href="/rss">Rss</a></li>
         </ul>
 
         <ul class="social-icons">
@@ -12,7 +12,7 @@
             <li><a href="#"><span class="symbol">roundedinstagram</span></a></li>
             <li><a href="http://www.dribbble.com/NorthernFolks"><span class="symbol">roundeddribble</span></a></li>
         </ul>
-        <a href="#" class="close">Close</a>
+        <a href="#" class="close onHoverPulse">Close</a>
     </div>
 </nav>
 <header class="header" role="banner"  {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
@@ -20,21 +20,21 @@
 
         <!-- Menu -->
         <div class="menu-toggle">
-            <a href="#" class="menu-icon">Menu</a>
+            <a href="#" class="menu-icon onHoverPulse">Menu</a>
         </div>
 
         <!-- Mail -->
         <div id="mail">
-            <a href="mailto:help@northernfolks.com" class="mail-icon">Mail</a>
+            <a href="{{author.email}}" class="mail-icon onHoverSpin">Mail</a>
         </div>
 
         {{#if @blog.logo}}
             <!-- Logo -->
-            <div id="logo">
+            <div id="logo" {{#if @body.index}}class="animate" data-anim-type="bounceIn" data-anim-delay="200"{{/if}}>
                 <a id="logo" href="/"><img src="{{@blog.logo}}" alt="Logo"></a>
             </div>
         {{else}}
-            <div id="site-title" class="h1">
+            <div id="site-title" class="animate h1" data-anim-type="bounceIn" data-anim-delay="200">
                 <a href="/" rel="nofollow">{{@blog.title}}</a>
             </div>        
         {{/if}}

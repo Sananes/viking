@@ -4,14 +4,9 @@
  Author:     Aaron Sananes & Daniel Sandvik
  Website:    http://www.northernfolks.com
 
-
+**********************
  Bones Scripts File
  Author: Eddie Machado
-
- This file should contain any js scripts you want to add to the site.
- Instead of calling it in the header or throwing it inside wp_head()
- this file will be called automatically in the footer so as not to
- slow the page load.
 
  */
 
@@ -254,7 +249,7 @@
     
                                     $(".endless").remove();
                                     posts.each(function (index) {
-                                        $(posts[index]).appendTo("#main").addClass('animated fadeIn');
+                                        $(posts[index]).appendTo("#main").addClass('animate fadeIn');
                                     });
     
                                     //Callback when create new article
@@ -270,16 +265,16 @@
                         });
                     } else {
                         if ($(".pagination").css("display") == "block") {
-                            $(".no-more").removeClass("animated shake");
-                            $(".no-more").addClass("animated shake");
+                            $(".no-more").removeClass("animate wobble infinite");
+                            $(".no-more").addClass("animate wobble infinite");
                         }
         
                     }
                 } else {
                     $(".pagination").css("display", "block");
-                    $(".pagination").html("<span class=\"button no-more\">''-_-</span>");
-                    $(".no-more").removeClass("animated shake");
-                    $(".no-more").addClass("animated shake");
+                    $(".pagination").html("<span class=\"button no-more\" style=\"opacity:1\">''-_-</span>");
+                    $(".no-more").removeClass("animate wobble infinite");
+                    $(".no-more").addClass("animate wobble infinite");
                 }
             }
         });
@@ -360,7 +355,9 @@ jQuery(document).ready(function($) {
 
 
     // add all your scripts here
-
+    if($('body').hasClass('home-template')) {
+        $('#logo').addClass('animate bounceIn')
+    }
     function navToggle() {
         var menuIcon = $('.menu-toggle a'), bodyClick = false
             navHeader = $('.nav'),
@@ -390,11 +387,10 @@ jQuery(document).ready(function($) {
                 overlay.hide();
             })
         }
-
-
     };
 
     navToggle();
+
     // var src = document.querySelector('.post img:first-of-type').getAttribute('src');
     // $('.post').prepend('<img src="' + src +'">');
     // Scroll to Top
