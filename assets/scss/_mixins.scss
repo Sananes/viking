@@ -27,7 +27,38 @@ CLEARFIXIN'
 	&:before, &:after { content: ""; display: table; }
 	&:after { clear: both; }
 }
+/*********************
+ANIMATION
+*********************/
+@mixin animation ($delay, $iteration, $timing, $duration, $animation) {
+    -webkit-animation-delay: $delay;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-name: $animation;
+    -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+    -webkit-animation-iteration-count: $iteration;
+    -webkit-animation-timing-function: $timing; 
 
+    -moz-animation-delay: $delay;
+    -moz-animation-duration: $duration;
+    -moz-animation-name: $animation;
+    -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+    -moz-animation-iteration-count: $iteration;
+    -moz-animation-timing-function: $timing; 
+
+    -o-animation-delay: $delay;
+    -o-animation-duration: $duration;
+    -o-animation-name: $animation;
+    -o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+    -o-animation-iteration-count: $iteration;
+    -o-animation-timing-function: $timing; 
+ 
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $animation;
+    animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+    animation-iteration-count: $iteration;
+    animation-timing-function: $timing; 
+}
 /*********************
 TOOLS
 *********************/

@@ -546,6 +546,9 @@ CLEARFIXIN'
     clear: both; }
 
 /*********************
+ANIMATION
+*********************/
+/*********************
 TOOLS
 *********************/
 * {
@@ -714,7 +717,55 @@ a, a:visited {
   padding-top: 20px; }
   .read-more a {
     font-family: "Exo 2", Helvetica, Arial, sans-serif !important;
-    text-transform: normal; }
+    text-transform: normal;
+    color: white !important; }
+
+#loading {
+  width: 100%;
+  background: #d4dae0;
+  border-radius: 3px;
+  text-align: center;
+  padding: 8px 0;
+  display: inline-block; }
+  #loading span {
+    background-image: url("../images/loading-icon.png");
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    text-indent: -999em;
+    display: inline-block;
+    -webkit-animation-delay: 0;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-name: spin;
+    -webkit-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: 1000ms;
+    -moz-animation-delay: 0;
+    -moz-animation-duration: 1000ms;
+    -moz-animation-name: spin;
+    -moz-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: 1000ms;
+    -o-animation-delay: 0;
+    -o-animation-duration: 1000ms;
+    -o-animation-name: spin;
+    -o-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: 1000ms;
+    animation-delay: 0;
+    animation-duration: 1000ms;
+    animation-name: spin;
+    animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    animation-iteration-count: infinite;
+    animation-timing-function: 1000ms; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
+      #loading span {
+        background-image: url("../images/loading-icon@2x.png");
+        background-size: 100% 100%; } }
 
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
