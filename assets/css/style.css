@@ -740,6 +740,9 @@ a {
         background-image: url("../images/loading-icon@2x.png");
         background-size: 100% 100%; } }
 
+.endless {
+  margin-bottom: 40px; }
+
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/

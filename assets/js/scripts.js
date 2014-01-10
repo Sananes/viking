@@ -265,16 +265,16 @@
                         });
                     } else {
                         if ($(".pagination").css("display") == "block") {
-                            $(".no-more").removeClass("animate wobble infinite");
-                            $(".no-more").addClass("animate wobble infinite");
+                            $(".no-more").removeClass("animate wobble");
+                            $(".no-more").addClass("animate wobble");
                         }
         
                     }
                 } else {
                     $(".pagination").css("display", "block");
                     $(".pagination").html("<span class=\"button no-more\" style=\"opacity:1\">''-_-</span>");
-                    $(".no-more").removeClass("animate wobble infinite");
-                    $(".no-more").addClass("animate wobble infinite");
+                    $(".no-more").removeClass("animate wobble");
+                    $(".no-more").addClass("animate wobble");
                 }
             }
         });

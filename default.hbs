@@ -42,11 +42,13 @@
     <meta name="twitter:creator" content="@authors_twitter_handle">
     <meta name="twitter:title" content="{{meta_title}}">
     <meta name="twitter:description" content="{{@blog.description}}">
+    {{#if @blog.logo}}
     <meta name="twitter:image:src" content="{{@blog.logo}}">
-
+    {{/if}}
+    
     <!-- Announce the rss feed -->
     <link rel="alternate" type="application/rss+xml" title="{{@blog.title}} » Feed" href="/rss">
-
+    <link href="/images/favicon.png" rel="icon" type="image/png" />
     <!-- Add Modernizr for better IE8 Support -->
     <script type="text/javascript" src="/assets/js/libs/modernizr.custom.min.js"></script>
 
@@ -58,9 +60,11 @@
     <link rel="stylesheet" id="linen-stylesheet-css" href="/assets/css/animate.css" type="text/css" media="all">
 
     <!-- Include color schemes ->
-    <!--     <link rel="stylesheet" id="linen-stylesheet-css" href="/assets/css/green.css" type="text/css" media="all"> -->
-    <!--     <link rel="stylesheet" id="linen-stylesheet-css" href="/assets/css/red.css" type="text/css" media="all"> -->
-    <link rel="stylesheet" id="linen-stylesheet-css" href="/assets/css/orange.css" type="text/css" media="all">
+    <!-- <link rel="stylesheet" id="linen-stylesheet-css" href="/assets/css/green.css" type="text/css" media="all"> -->
+    <!-- <link rel="stylesheet" id="linen-stylesheet-css" href="/assets/css/red.css" type="text/css" media="all"> -->
+    <!-- <link rel="stylesheet" id="linen-stylesheet-css" href="/assets/css/orange.css" type="text/css" media="all"> -->
+
+    
     <!--[if lt IE 9]>
     <link rel='stylesheet' id='linen-ie-only-css'  href='/assets/css/ie.css' type='text/css' media='all' />
     <![endif]-->
