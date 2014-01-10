@@ -8,23 +8,24 @@ Website:    http://www.northernfolks.com
   Green Color Scheme
 **************************/
 .header {
-  background-color: #8aba56 !important;
+  background-color: #5cc790 !important;
+  background-image: url(../images/header-image-green.jpg) !important;
 }
 a:hover, .entry-content a {
-  color: #8aba56 !important;
+  color: #5cc790 !important;
 }
 .entry-content a:hover {
-  color: #729e42 !important;
+  color: #47af79 !important;
 }
 .button, .home-template .button, .home-template .button:hover {
   color: #fff !important;
 }
 .button:hover {
-  background: #8aba56 !important;
+  background: #5cc790 !important;
 }
 .menu li a:hover, .social-icons li a:hover {
   color: #fff !important;
 }
 blockquote {
-  border-color: #8aba56 !important;
+  border-color: #5cc790 !important;
 }
